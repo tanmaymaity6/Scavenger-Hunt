@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Scavenger Hunt</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1><center>Scavenger Hunt</center></h1>
+    <center>
+      <img
+        id="box"
+        class="box"
+        src="top-view-mystery-box-concept.jpg"
+        alt="Box"
+      />
+      <h2 id="clue1-title" class="clue">Clue One:</h2>
+      <p id="clue1-description" class="description">
+        You see a big golden box. Click on it to reveal the first clue!
+      </p>
+    </center>
+
+    <center>
+      <h2 id="clue2-title" class="clue hidden">Clue Two:</h2>
+      <img
+        id="coffee"
+        class="coffee hidden"
+        src="coffee.jpg"
+        alt="Coffee Shop"
+      />
+      <p id="clue2-description" class="description hidden">
+        You found a note on the coffee cup with the keyword "Badger". Type the
+        correct keyword below to unlock the next clue!
+      </p>
+      <input id="keyword" type="text" placeholder="Enter the keyword" />
+      <button id="submit-keyword" class="hidden">Submit</button>
+    </center>
+
+    <center>
+      <h2 id="clue3-title" class="clue hidden">Clue Three:</h2>
+      <img id="cliffs" class="cliffs hidden" src="cliff.jpg" alt="Cliffs" />
+      <p id="clue3-description" class="description hidden">
+        You arrive at the cliffs. Solve this final puzzle to reveal the
+        treasure: **"Move the letters of 'ACHIEVE' forward by one."**
+      </p>
+      <input
+        id="final-answer"
+        type="text"
+        placeholder="Enter the final answer"
+      />
+      <button id="submit-final" class="hidden">Submit</button>
+    </center>
+
+    <center>
+      <h2 id="congrats-title" class="clue hidden">Congratulations!</h2>
+      <img
+        id="congrats"
+        class="congrats hidden"
+        src="celebration.jpg"
+        alt="Congratulations"
+      />
+      <p id="congrats-description" class="description hidden">
+        You solved the scavenger hunt and found the treasure.
+      </p>
+    </center>
+
+    <script src="script.js"></script>
+  </body>
+</html>
